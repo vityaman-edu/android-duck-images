@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">DucksApp</string>
     <string name="app_duck_picture_alt">A Duck</string>
+    <string name="app_duck_button_alt">Next Button</string>
+    <string name="app_duck_next">Next</string>
 </resources>
