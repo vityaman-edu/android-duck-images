@@ -3,4 +3,5 @@
     <string name="app_duck_picture_alt">A Duck</string>
     <string name="app_duck_button_alt">Next Button</string>
     <string name="app_duck_next">Next</string>
+    <string name="app_duck_http_status_code">HTTP Status Code</string>
 </resources>

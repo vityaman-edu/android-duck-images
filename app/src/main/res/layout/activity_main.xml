@@ -20,33 +20,46 @@
         android:id="@+id/image_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="32dp"
         android:contentDescription="@string/app_duck_picture_alt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar_main"
-        android:layout_margin="32dp"/>
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main" />
 
     <com.google.android.material.progressindicator.CircularProgressIndicator
         android:id="@+id/progress_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:indeterminate="true"
         android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/input_http_code"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/input_http_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="128dp"
+        android:layout_marginVertical="16dp"
+        android:hint="@string/app_duck_http_status_code"
+        android:imeOptions="actionSearch"
+        android:inputType="number"
         app:layout_constraintBottom_toTopOf="@id/button_main"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="32dp"/>
+        app:layout_constraintRight_toRightOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:contentDescription="@string/app_duck_next"
         android:text="@string/app_duck_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="32dp"/>
+        app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
